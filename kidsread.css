@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+:root {
+    --head-font: "Lora";
+    --body-font: Helvetica, Arial, sans-serif;
+    --body-color: #333;
+    --color-gray: #d0d0d0;
+    --normal: #666;
+    --active: #DEB887;
+    --hover: #00ddff;
+}
+
+a {
+    text-decoration: none;
+    color: var(--normal);
+    font-size: 1.5em;
+}
+a:active {
+    color: var(--active);
+}
+a:hover {
+    color: var(--hover);
+}
+h1{
+    text-align: center;
+}
+h1 a {
+    font-family: var(--head-font);
+    color: var(--body-color);
+    font-size: 2.4em;
+}
+h1 a:hover {
+    color: var(--body-color);
+}
+nav {
+    text-align: center;
+    border-top: solid 1px var(--color-gray);
+    border-bottom: solid 1px var(--color-gray);
+}
+ul {
+    list-style: none;
+    text-transform: uppercase;
+    padding: 0;
+}
+li {
+    font-family: var(--head-font);
+    margin-bottom: 20px;
+}
+.post-date {
+    text-transform: uppercase;
+    font-family: var(--head-font);
+    text-align: end;
+    border-bottom: solid 1px var(--color-gray);
+    padding-bottom: .5em;
+    padding-top: 1.3em;
+    font-size: 2em;
+    font-weight: 500;
+}
+.post-content h2 {
+    font-family: var(--head-font);
+    font-weight: 500;
+    padding-top: .6em;
+}
+img {
+    display: flex;
+    justify-self: center;
+    width: 300px;
+}
+p {
+    font-family: var(--body-font);
+    font-size: 1.6em;
+}
+p a {
+    font-size: 1.0em;
+    font-weight: 400;
+}
+
+@media (min-width: 1000px) {
+    ul {
+        display: flex;
+        justify-content: right;
+    }
+    li {
+        margin-left: 1.5em;
+        margin-bottom: 0;
+    }
+    article {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+    }
+    .post-date {
+        grid-column: 1/2;
+        border-bottom: none;
+        border-right: solid 1px var(--color-gray);
+        padding: 0;
+        padding-right: 15px;
+    }
+    .post-content {
+        grid-column: 2/3;
+        margin-left: 15px;
+        border-bottom: solid 1px var(--color-gray);
+    }
+    .post-content h2 {
+        padding: 1px;
+    }
+}
