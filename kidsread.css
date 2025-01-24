@@ -1,106 +1,105 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
-
-:root {
-    --head-font: "Lora";
-    --body-font: Helvetica, Arial, sans-serif;
-    --body-color: #333;
-    --color-gray: #d0d0d0;
-    --normal: #666;
-    --active: #DEB887;
-    --hover: #00ddff;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
 a {
-    text-decoration: none;
-    color: var(--normal);
-    font-size: 1.5em;
+  text-decoration: none;
+  color: #666;
+  font-size: 1.5em;
 }
-a:active {
-    color: var(--active);
+a :active {
+  color: #DEB887;
 }
-a:hover {
-    color: var(--hover);
+a :hover {
+  color: #00ddff;
 }
-h1{
-    text-align: center;
+
+h1 {
+  text-align: center;
 }
 h1 a {
-    font-family: var(--head-font);
-    color: var(--body-color);
-    font-size: 2.4em;
+  font-family: "Lora";
+  color: #333;
+  font-size: 2.4em;
 }
-h1 a:hover {
-    color: var(--body-color);
+h1 a :hover {
+  color: #333;
 }
+
 nav {
-    text-align: center;
-    border-top: solid 1px var(--color-gray);
-    border-bottom: solid 1px var(--color-gray);
+  border-bottom: solid 1px #d0d0d0;
+  text-align: center;
+  border-top: solid 1px #d0d0d0;
 }
+
 ul {
-    list-style: none;
-    text-transform: uppercase;
-    padding: 0;
+  list-style: none;
+  text-transform: uppercase;
+  padding: 0;
 }
+
 li {
-    font-family: var(--head-font);
-    margin-bottom: 20px;
+  font-family: "Lora";
+  margin-bottom: 20px;
 }
+
 .post-date {
-    text-transform: uppercase;
-    font-family: var(--head-font);
-    text-align: end;
-    border-bottom: solid 1px var(--color-gray);
-    padding-bottom: .5em;
-    padding-top: 1.3em;
-    font-size: 2em;
-    font-weight: 500;
+  border-bottom: solid 1px #d0d0d0;
+  text-transform: uppercase;
+  font-family: "Lora";
+  text-align: end;
+  padding-bottom: 0.5em;
+  padding-top: 1.3em;
+  font-size: 2em;
+  font-weight: 500;
 }
+
 .post-content h2 {
-    font-family: var(--head-font);
-    font-weight: 500;
-    padding-top: .6em;
+  font-family: "Lora";
+  font-weight: 500;
+  padding-top: 0.6em;
 }
+
 img {
-    display: flex;
-    justify-self: center;
-    width: 300px;
+  display: flex;
+  justify-self: center;
+  width: 300px;
 }
+
 p {
-    font-family: var(--body-font);
-    font-size: 1.6em;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.6em;
 }
 p a {
-    font-size: 1.0em;
-    font-weight: 400;
+  font-size: 1em;
+  font-weight: 400;
 }
 
 @media (min-width: 1000px) {
-    ul {
-        display: flex;
-        justify-content: right;
-    }
-    li {
-        margin-left: 1.5em;
-        margin-bottom: 0;
-    }
-    article {
-        display: grid;
-        grid-template-columns: 1fr 3fr;
-    }
-    .post-date {
-        grid-column: 1/2;
-        border-bottom: none;
-        border-right: solid 1px var(--color-gray);
-        padding: 0;
-        padding-right: 15px;
-    }
-    .post-content {
-        grid-column: 2/3;
-        margin-left: 15px;
-        border-bottom: solid 1px var(--color-gray);
-    }
-    .post-content h2 {
-        padding: 1px;
-    }
+  ul {
+    display: flex;
+    justify-content: right;
+  }
+  li {
+    margin-left: 1.5em;
+    margin-bottom: 0;
+  }
+  article {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+  .post-date {
+    grid-column: 1/2;
+    border-bottom: none;
+    border-right: solid 1px #d0d0d0;
+    padding: 0;
+    padding-right: 15px;
+  }
+  .post-content {
+    border-bottom: solid 1px #d0d0d0;
+    grid-column: 2/3;
+    margin-left: 15px;
+  }
+  .post-content h2 {
+    padding: 1px;
+  }
 }
+
+/*# sourceMappingURL=kidsread.css.map */

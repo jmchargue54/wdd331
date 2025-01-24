@@ -1,0 +1,34 @@
+:root {
+  --background: #($body-background-color) ;
+}
+
+body {
+  background-color: darkred;
+  color: white;
+}
+
+form {
+  background-color: white;
+  color: black;
+}
+
+#contactform {
+  background-color: white;
+}
+#contactform input, #contactform textarea {
+  background-color: white;
+  flex: 2;
+}
+#contactform input:focus, #contactform textarea:focus {
+  background-color: #aaa;
+}
+@media (min-width: 500px) {
+  #contactform {
+    width: 90%;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
