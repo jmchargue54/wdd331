@@ -1,1 +1,6 @@
 @import "tailwindcss";
+
+@theme {
+    --spacing-resp8: 8vw;
+    --spacing-resp24: 24vw;
+}
